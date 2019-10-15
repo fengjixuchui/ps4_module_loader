@@ -1485,6 +1485,7 @@ PvGTq9AGFfk _ZN3sce2np12WorkerThreadD1Ev
 p5hRe1k4Wlg _ZN3sce2np13JsonDocParserD0Ev
 iFOXfoXRHFQ _ZN3sce2np13JsonDocParserD1Ev
 xS-Hjw1psYs _ZN3sce2np13JsonDocParserD2Ev
+Y5eglu1FrsE _ZN3sce2np13NpAccessToken5ClearEv
 h8d3tfMiyhc _ZN3sce2np13NpAccessTokenC1Ev
 2lzWy2xmnhY _ZN3sce2np13NpAccessTokenC2Ev
 SFZYbH7eOnk _ZN3sce2np13NpAccessTokenD0Ev
@@ -8365,6 +8366,7 @@ Ab0R4oOE-DY glWaitSync
 Ulu9vNs5vn8 goby_Fin
 7TKreizczvg goby_FreeLicenseInfo
 bR3lFCbl2ow goby_FreeLinkList
+bbuFLemjwRA goby_FreeNodeList
 uDv80Z-OaP8 goby_FreeRemoteInfo
 qUFOjETOS-4 goby_Init
 +fo47VU51qw goby_ProcessMessage
@@ -11204,7 +11206,10 @@ QaTrhMKUT18 nexttowardf
 ryyn6-WJm6U nexttowardl
 3YnXspQNyw8 nmount
 3wcYIMz8LUo nrand48
+VteK1e0o0fY nsnp_ActionCheck
+wivfLfaFAZg nsnp_ActionPerform
 GjQLdCasJDg nsnp_Callback
+n2nk-l3evas nsnp_CheckHMAC
 ERhsQL+87ks nsnp_Decrypt
 0aPYh8P2+Ps nsnp_DecryptWithOffset
 Y3hsRCZODFs nsnp_Fin
@@ -11617,6 +11622,7 @@ lftdXgkTxmQ sceAppInstUtilAppGetInsertedDiscMasterDataId
 KnhTdl8Arjw sceAppInstUtilAppGetInsertedDiscTitleId
 hJifaKzQUxE sceAppInstUtilAppGetInsertedDiscTitleIdList
 8AFfaImRNvM sceAppInstUtilAppGetIrremovableAppList
+qz4egqkqF5Y sceAppInstUtilAppGetMoveErrorAppList
 2emCE6-7fOA sceAppInstUtilAppGetNoRelatedAddcontTitleList
 X41cYKFlQv8 sceAppInstUtilAppGetSize
 j7cPZ0+LO50 sceAppInstUtilAppGetStoreCompilationDiscInfo
@@ -11705,6 +11711,7 @@ AumF38kir6s sceApplicationLocalProcessResume
 slkr1eWM1o8 sceApplicationLocalProcessSuspend
 W+VrzBY+LBA sceApplicationNotifyCoredumpRequestEnd
 +dLapxrRdJM sceApplicationNotifyCoredumpRequestProgress
+rH8hY8WuDvg sceApplicationNotifyPhase
 f6zbafRlX3s sceApplicationNotifyVshMainOnStandby
 dqwCM7RWifY sceApplicationNotifyVshReady
 IgqBZdkIvqM sceApplicationRaiseException
@@ -12035,6 +12042,8 @@ KY6RXUXi6ZQ sceBgftServiceDownloadStopTask
 WQbIW7cm-Bc sceBgftServiceInit
 8yiDK9rMKtc sceBgftServiceIntAbortNotificationEvent
 yaRL7i-Vkng sceBgftServiceIntDebugDownloadRequest
+610iwJKrGGo sceBgftServiceIntDownloadGetGameAndGameAcProgress
+UZoHTWgeI9I sceBgftServiceIntDownloadGetPatchProgress
 5txx+w0HYOs sceBgftServiceIntDownloadGetProgress
 uDwHwwoT6rg sceBgftServiceIntDownloadGetTaskInfo
 byUP0khjgLA sceBgftServiceIntDownloadPauseTask
@@ -12053,6 +12062,8 @@ Yv0IsOYIZiA sceBgftServiceIntDownloadStopTaskAll
 BYmJ-iMswng sceBgftServiceIntDownloadUnregisterTaskAll
 vJhYrkgTYWY sceBgftServiceIntGetNotificationEvent
 YTQMY0RdykU sceBgftServiceIntGetNotificationParam
+Nzr1l05aG2k sceBgftServiceIntGetTaskInfoValueInt
+b3SquMkPlQc sceBgftServiceIntGetTaskInfoValueString
 BZ0olR8Da0g sceBgftServiceIntInit
 ODC4-mOiwl0 sceBgftServiceIntTerm
 8l9+nBL1Ps0 sceBgftServiceIntUploadGetProgress
@@ -12086,6 +12097,7 @@ o+5KjZ3r4O4 sceBluetoothHidThreadParamInitialize
 upEB3XUvH8o sceBluetoothHidUnregisterCallback
 u+lIalCYOho sceBluetoothHidUnregisterDevice
 EwdhSaFjU7A sceBufferAlloc
+dFuIkGWGshc sceBufferDup
 DHItaFqEQkU sceBufferFree
 G2OOzViPX7I sceBufferInit
 rB8XP9T6Dsk sceBufferRealloc
@@ -12282,6 +12294,7 @@ IUlpGnuoR1c sceCompositorInitWithProcessOrder
 GgOrwi+9vcA sceCompositorLockCommandBuffer
 4PTzGjEmkXI sceCompositorMakeCanvasHandle
 mKEAx7QnPeg sceCompositorMapAnotherProcess
+y5IJdPxdBrE sceCompositorQuit
 1OXbuWLRxqI sceCompositorReleaseCommandBuffer
 ZwsBB3s8qMk sceCompositorReleaseIndex
 9zmcX1uKDGg sceCompositorReleaseLocalStall
@@ -13008,6 +13021,7 @@ k0Kog-TlHYg sceFsMountTrophyData
 SFz5prdeR54 sceFsSetAttribute
 AGLEZbbzOLo sceFsSetSystemReserveSize
 CMA9M3cwctY sceFsTrophyImageError
+DBswy44k1lU sceFsUfsAllocateAdditionalContents
 Gr4HfdAqjc4 sceFsUfsAllocateAligned
 82k2MzTAs3U sceFsUfsAllocateDownloadData
 DLpCCyufz2s sceFsUfsAllocateGameImage
@@ -13033,6 +13047,7 @@ xfy2uloQTls sceFsUfsLargewriteFsckWithMM
 ewN9DUWH07g sceFsUfsMkfsForExternalHDD
 K9EXdD9bqzM sceFsUfsMkfsWithFixedCylinderGroupSize
 LzrlqPj88rM sceFsUfsMkLwfs
+JhDPrErJnCw sceFsUfsRecryptSyncMetadata
 FKSu6oEy0iE sceFsUfsSeekHoleInFile
 rTu7zaYoryI sceFsUmountDownloadData
 UQTSykySQ40 sceFsUmountGamePkg
@@ -13272,6 +13287,7 @@ IVjtw0AuSBE sceHidControlSetHandleState
 hS1-bPYxKC4 sceHidControlSetJediAudioOutPath
 +Xne3E9M-E8 sceHidControlSetJediVolumeGain
 vY-muZt5ojc sceHidControlSetProcessFocus
+0ypWH4DpK9E sceHidControlSetRevokeList
 6wfdbeqaQco sceHidControlSetUserColor
 6biw1XHTSqQ sceHmdClose
 gEokC+OGI8g sceHmdDistortionGet2dVrCommand
@@ -13793,6 +13809,7 @@ ToISj0q68Qg sceKernelGetCpuUsageAll
 VS45LnNqyCo sceKernelGetCpuUsageProc
 QbdkmhQQfIM sceKernelGetCpuUsageProc2
 g0VTBxfJyu0 sceKernelGetCurrentCpu
+7siOfIbbg8I sceKernelGetCurrentFanDuty
 i-H8tE6wTqI sceKernelGetDataTransferMode
 j2AIqSqJP0w sceKernelGetdents
 pO96TwzOm5E sceKernelGetDirectMemorySize
@@ -14445,6 +14462,7 @@ TPVebHEFB2s sceMusicCoreServerSetTrackList
 EEkGXyPcT6E sceMusicCoreServerTriggerEvent
 Rz5fOEsYd7A sceMusicCoreServerTriggerEventSync
 MrUOZGxjKw8 sceMusicCoreServerUnregistEventCallback
+3KChwrxsVPg sceMusicPlayerServiceGetAudioVolume
 wHKiDjNLQwI sceMusicPlayerServiceGetTrackInfo
 WypjBw-l+pE sceMusicPlayerServiceInitialize
 xT55MQDY9lg sceMusicPlayerServiceInitialize2
@@ -14459,6 +14477,7 @@ tMgpmzMA4Zc sceMusicPlayerServiceSetAudioVolume
 +uCwAp6KYtQ sceMusicPlayerServiceSetRepeatMode
 DMvAm4HFKg0 sceMusicPlayerServiceSetShuffle
 4cuKd4S83xw sceMusicPlayerServiceSetTrackList
+iawJpYIQM7s sceMusicPlayerServiceSetTrackList2
 7Ayp3diNYnk sceMusicPlayerServiceStop
 uZXjTVsS-hU sceMusicPlayerServiceTerminate
 PIWqhn9oSxc sceNetAccept
@@ -14552,6 +14571,7 @@ LXADzTIzM9I sceNetCtlApGetInfo
 AKZOzsb9whc sceNetCtlApGetState
 FdN+edNRtiw sceNetCtlApInit
 pmjobSVHuY0 sceNetCtlApRegisterCallback
+amqSGH8l--s sceNetCtlApRestart
 r-pOyN6AhsM sceNetCtlApStop
 cv5Y2efOTeg sceNetCtlApTerm
 NpTcFtaQ-0E sceNetCtlApUnregisterCallback
@@ -14784,14 +14804,20 @@ UskWpVWxSvg sceNpArchTerm
 JrXA7baBMPQ sceNpAsmAbort
 0cn2c-bk8wA sceNpAsmClientAbortRequest
 tOJ-WGFDt-Y sceNpAsmClientCreateRequest2
+GPRRxFM01r4 sceNpAsmClientCreateResourceContext
 1wMn3X94WME sceNpAsmClientDeleteRequest
+KA2AITpVTCg sceNpAsmClientDeleteResourceContext
 yWcto7E39+k sceNpAsmClientGetAppId
+vf+lYeOXdI8 sceNpAsmClientGetGameNpTitleInfo
+YQ7-z4zFWok sceNpAsmClientGetGameNpTitleToken
 6bvqnBIINiY sceNpAsmClientGetGameTitleBanInfo
 cOLn5A3ZoqU sceNpAsmClientGetNpComInfo2
 P6fkTotWFEg sceNpAsmClientGetNpComInfo2A
 nuPl4uVXYMM sceNpAsmClientGetNpTitleId
 HtpGVrVLOlA sceNpAsmClientGetNpTitleToken
 cugDQBHux8k sceNpAsmClientGetNpTitleTokenA
+O42ZlBvIPMM sceNpAsmClientGetServiceBaseUrl
+iRvaaSfHBc8 sceNpAsmClientGetServiceBaseUrlA
 TiC81-OKjpg sceNpAsmClientGetServiceIdInfo
 3rlqy6XxrmI sceNpAsmClientGetServiceIdInfoA
 wZy5M6lzip0 sceNpAsmClientInitialize
@@ -14801,6 +14827,7 @@ YDDHD6RP4HQ sceNpAsmCreateConnection
 hIFFMeoLhcY sceNpAsmCreateRequest
 UxOJvGmy3mA sceNpAsmDeleteConnection
 RfokKHMuOsE sceNpAsmDeleteRequest
+kc-O9XKFRIE sceNpAsmGetServiceBaseUrl
 1Xe+XZ1oI28 sceNpAsmGetServiceIdInfo
 j2dSNi+SJro sceNpAsmInitialize
 Dt2rEe-d5c0 sceNpAsmTerminate
@@ -14964,6 +14991,7 @@ HoPC33siDD4 sceNpInt64ToStr
 GsWjzRU7AWA sceNpIntCheckPlus
 H6xqSNWg0wM sceNpIntGetAppType
 SdNiYQWjU6E sceNpIntGetGamePresenceStatus
+H0n1QHWdVwQ sceNpIntGetNpTitleId
 G6qytFoBJ-w sceNpIntGetPlatformType
 fY4XQoA20i8 sceNpIntIsOnlineIdString
 hkeX9iuCwlI sceNpIntIsValidOnlineId
@@ -15007,7 +15035,18 @@ iQr9UxPHUFs sceNpLookupCreateRequest
 vT9xhqPO6+0 sceNpLookupCreateTitleCtxA
 wLaxchvEEnk sceNpLookupDeleteRequest
 mtqDK9zkoIE sceNpLookupDeleteTitleCtx
+1O96muPzhgU sceNpLookupNetAbortRequest
+N0iF180VjGk sceNpLookupNetCensorComment
+UI5t6Rx6s5I sceNpLookupNetConvertJidToNpId
+ieROYX4vspk sceNpLookupNetConvertNpIdToJid
+KUIRsku7EPk sceNpLookupNetCreateRequest
+8DPEdJh9RkE sceNpLookupNetCreateTitleCtx
+HL-venrRcnQ sceNpLookupNetDeleteRequest
+dxpUx7z9StY sceNpLookupNetDeleteTitleCtx
 zVZE+fAhgFY sceNpLookupNetInit
+2nEVmFiV6OI sceNpLookupNetNpId
+jJH2P7KA4XU sceNpLookupNetSanitizeComment
+NWtf77WCXJs sceNpLookupNetSetTimeout
 Dbd5BY0QjG0 sceNpLookupNetTerm
 T6tnM1Uti4g sceNpLookupNpId
 V4EVrruHuy8 sceNpLookupPollAsync
@@ -15027,7 +15066,9 @@ CQG2oyx1-nM sceNpLwMutexUnlock
 A2OPwu2Xo-c sceNpMallocImpl
 AUuzKQIwhXY sceNpManagerIntAbortRequest
 HLQfohD2YuE sceNpManagerIntAccountId2UserId
+J0MUxuo9H9c sceNpManagerIntAddActiveSigninStateCallback
 E6rzFwsDFwE sceNpManagerIntAddPlusMemberTypeCallback
+S9xDus0Cums sceNpManagerIntAddSigninStateCallback
 f6hCBlMb-6Q sceNpManagerIntBind
 Nx+FM+bz0ZQ sceNpManagerIntBindByJson
 uyo-bsZsxII sceNpManagerIntBindByJsonUserInfo
@@ -15038,6 +15079,8 @@ Xg7dJekKeHM sceNpManagerIntCheckGameNpAvailability
 isNn0YyU83c sceNpManagerIntCheckGameNpAvailabilityA
 WtsuDMvVw-I sceNpManagerIntCheckGameNpAvailabilityWithPid
 m4JiU8k2PyI sceNpManagerIntCheckNpAvailability
+Dvk+xqAqXco sceNpManagerIntCheckNpState
+U30AU92fWdU sceNpManagerIntCheckNpStateA
 mQU19DRkeyI sceNpManagerIntCheckSignin
 3mR3QJFzrg4 sceNpManagerIntClearParentalControlInfo
 yX8qSFmkiyc sceNpManagerIntClearParentalControlInfoSubAccount
@@ -15074,6 +15117,7 @@ btKQfNe1jBY sceNpManagerIntGetGameTitleToken
 O7ivIf9AIFI sceNpManagerIntGetGameTitleTokenA
 vfHBP2-WXcM sceNpManagerIntGetGameVshToken
 pLjQLOflIUU sceNpManagerIntGetGameVshTokenWithPid
+es6OiIxGiL0 sceNpManagerIntGetIssuerId
 jCJEWuExbZg sceNpManagerIntGetLastAccountLanguage
 Oad+nopFTTA sceNpManagerIntGetMAccountId
 BTRVfOx7K1c sceNpManagerIntGetNpEnv
@@ -15150,7 +15194,9 @@ wHY17vvA+mA sceNpManagerIntOnlineId2UserId
 Qk5ehOXWs4g sceNpManagerIntParseJsonUserInfo
 d0IkWV+u25g sceNpManagerIntPfAuth
 WJV0RYOEc-E sceNpManagerIntPsnCoreInternalTest
+SuBDgQswXgo sceNpManagerIntRemoveActiveSigninStateCallback
 PafRf+sxnwA sceNpManagerIntRemovePlusMemberTypeCallback
+zh2KsQZlAN4 sceNpManagerIntRemoveSigninStateCallback
 k4M1w5Xstck sceNpManagerIntRevalidatePassword
 C77VnsdaKKI sceNpManagerIntSetPlusMemberTypeNB
 PZhz+vjp2CM sceNpManagerIntSetTimeout
@@ -15159,6 +15205,7 @@ PZhz+vjp2CM sceNpManagerIntSetTimeout
 z-I94rQUMRY sceNpManagerIntSigninByJsonUserInfo
 64D6V-ADQe0 sceNpManagerIntSignout
 HyrG1GT4JxI sceNpManagerIntStartSystemMode
++IagDajB6AQ sceNpManagerIntSubmitUserCode
 wUT4cOK0bj0 sceNpManagerIntTemporarySignout
 prZNuK3iTi8 sceNpManagerIntTerm
 uZnL4QZxzkI sceNpManagerIntUnbind
@@ -15234,6 +15281,7 @@ tHD5FPFXtu4 sceNpMatching2SignalingGetConnectionStatus
 CTy4PBhpWDw sceNpMatching2SignalingGetPeerNetInfoResult
 wUmwXZHaX1w sceNpMatching2SignalingGetPingInfo
 WkvclTMjNdI sceNpMatching2SignalingGetPort
+wupHEf8WOhM sceNpMatching2SignalingSetPort
 Mqp3lJ+sjy4 sceNpMatching2Terminate
 dfXSH2Tsjkw sceNpMemoryHeapDestroy
 FaMNvjMA6to sceNpMemoryHeapGetAllocator
@@ -15290,6 +15338,7 @@ DkN+WBclFps sceNpPushInit
 1S2urF24zNQ sceNpPushIntBeginInactive
 XyvQv2qjUng sceNpPushIntEndInactive
 O-2TTjhWw10 sceNpPushIntGetConnectionState
+d695X978Bgw sceNpPushStopNotification
 qo5mH49gnDA sceNpPushTerm
 6MuJ-vnDk6A sceNpPushUnregisterNotificationCallback
 e5wi2n-IgTk sceNpReallocImpl
@@ -15763,6 +15812,7 @@ N2Jbx4tIaQ4 sceNpWebApiIntCreateRequest
 TZSep4xB4EY sceNpWebApiIntCreateServicePushEventFilter
 8Vjplhyyc44 sceNpWebApiIntInitialize
 VjVukb2EWPc sceNpWebApiIntRegisterServicePushEventCallback
+sfq23ZVHVEw sceNpWebApiIntRegisterServicePushEventCallbackA
 CQtPRSF6Ds8 sceNpWebApiReadData
 vrM02A5Gy1M sceNpWebApiRegisterExtdPushEventCallback
 jhXKGQJ4egI sceNpWebApiRegisterExtdPushEventCallbackA
@@ -15824,6 +15874,7 @@ pnZXireDoeI scePadDisconnectDevice
 9ez71nWSvD0 scePadDisconnectPort
 77ooWxGOIVs scePadEnableAutoDetect
 +cE4Jx431wc scePadEnableExtensionPort
+E1KEw5XMGQQ scePadEnableSpecificDeviceClass
 DD-KiRLBqkQ scePadEnableUsbConnection
 Q66U8FdrMaw scePadGetBluetoothAddress
 qtasqbvwgV4 scePadGetCapability
@@ -15952,6 +16003,7 @@ l3AOURv-MWU scePlayReadyDomainCertFind
 632HibKgIsU scePlayReadyDomainJoinProcessResponse
 WBPErtBvp0M scePlayReadyDomainLeaveGenerateChallenge
 W5tL-FE60Sw scePlayReadyDomainLeaveProcessResponse
+h0qUZQn20ww scePlayReadyEnvelopeOpen
 6EKG2A33Gtk scePlayReadyFinalize
 VrWK7GksARg scePlayReadyFreeDecryptContext
 kLERpSLEraQ scePlayReadyInitialize
@@ -16808,6 +16860,7 @@ zsVbNbWPYzg sceSpPthreadSetprio
 YsLBZ7qPu20 sceSpSelect
 uM3tl64pJNU sceSrcUtilityFinalize
 qCL0KDAv1Os sceSrcUtilityFlush
+UFLN-KNhzX0 sceSrcUtilityGetPriority
 Y0LiSp+hb38 sceSrcUtilityInitialize
 scvqkMgVNz8 sceSrcUtilitySetPriority
 1VM0h1JrUfA sceSslCheckRecvPending
@@ -16978,6 +17031,7 @@ JoBqSQt1yyA sceSystemServiceLoadExec
 AmTvo3RT5ss sceSystemServiceLoadExecVideoServiceWebApp
 9ScDVErRRgw sceSystemServiceNavigateToAnotherApp
 e4E3MIEAS2A sceSystemServiceNavigateToGoBack
+ZeubLhPDitw sceSystemServiceNavigateToGoBackWithValue
 x2-o9eBw3ZU sceSystemServiceNavigateToGoHome
 fZo48un7LK4 sceSystemServiceParamGetInt
 SsC-m-S9JTA sceSystemServiceParamGetString
@@ -17958,9 +18012,17 @@ H1VDOoibLBg sceVorbisDecBitrate
 I5jQit5Q78Q sceVorbisDecBitrateInstant
 UJvFjRAnQ2k sceVorbisDecClear
 M+ZTsbhxKpM sceVorbisDecComment
+gzjhKWIF5Gs sceVorbisDecCrossLap
 9kZc-37F7es sceVorbisDecGetDecodePriority
+bASEQctTGhI sceVorbisDecGetLastDecodeError
 YzIPMpnHJzU sceVorbisDecInfo
 s6a5LF1NG4g sceVorbisDecOpenCallbacks
+pZ1ctWkAU9Y sceVorbisDecPcmSeek
+oZZwcwzugfI sceVorbisDecPcmSeekLap
+PdwTVolubW4 sceVorbisDecPcmSeekPage
+Tyzq3UGlllM sceVorbisDecPcmSeekPageLap
+MPhCP85gRP4 sceVorbisDecPcmTell
+v6LjiH858Sc sceVorbisDecPcmTotal
 CSFNyhqnD5k sceVorbisDecRawSeek
 cu5DLZM7-k8 sceVorbisDecRawSeekLap
 k9meG9QXtn4 sceVorbisDecRawTell
@@ -17970,6 +18032,7 @@ wHbu4oz+z0I sceVorbisDecReadFilter
 +A20uE3spLQ sceVorbisDecReadFloat
 OZBKii+KboY sceVorbisDecSerialNumber
 ORxxAa6qnAA sceVorbisDecSetDecodePriority
+uNBguxxOcgI sceVorbisDecStreams
 6yXA1cZyFz4 sceVorbisDecTimeSeek
 rfYTE+X39pY sceVorbisDecTimeSeekLap
 0GAn6zZgyfA sceVorbisDecTimeSeekPage
